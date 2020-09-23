@@ -37,7 +37,7 @@ Note: Before reaching the last step, you should **not** touch the HTML. You _may
 
 ### 1 - Preparing:
 
-1. Get into your submission folder. Exercises > CV-Styling.
+1. Fork this repository then clone the fork to your pc.
 
 ### 2 - Implement Style 1:
 
@@ -76,7 +76,6 @@ Note: Before reaching the last step, you should **not** touch the HTML. You _may
 
 1. Don't panic! One step at a time
 1. Don't forget to push back changes from time to time (`git add -A`, then `git commit -m "message"` then `git push -u origin master`)
-1. When you're satisfied, submit a _Pull Request_ on github.
 
 ## Images:
 
