@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body > div {
+    margin: 5%;
+
+}
+
+hgroup h2 {
+    display:none;
+}
+
+#about h3 {
+    display: none;
+}
+
+#about {
+    margin-bottom: 15%;
+    border-top: 1px solid gray;
+}
+
+#about p {
+    margin-top: 1.5%;
+    width: 70%;
+    opacity: 0.5;
+}
+
+header figure {
+    position: absolute;
+    left: 70%;
+    top: 14%;
+    background-color: gray;
+    height: 110px;
+    width: 110px;
+    transform: scale(1.5) rotate(-15deg);
+}
+
+
+
+
+#competencies {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 10%;
+    margin-bottom: 5%;
+    
+}
+
+#competencies h3 {
+
+    grid-row: 1/3;
+    border-right: 1px solid black;
+
+
+}
+
+
+.skills-primary .skill {
+
+    color: white;
+    text-align: left;
+    background-color: #008080;
+    height: 25px;
+    width: 120px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 1px;
+}
+
+.skills-secondary .skill {
+    color: white;
+    text-align: left;
+    background-color: #008080;
+    height: 18px;
+    width: 120px;
+    padding: 5px;
+    margin-left: 10px;
+
+}
+
+.skills-primary {
+    display: flex;
+    align-self: center;
+    
+
+}
+
+.skills-secondary {
+    display: flex;
+    font-size: 0.7em;
+}
+
+.skills-primary [data-skill="5"] span::after {
+    display: inline-block;
+    content: '\2005\ \2005\ \2605\ \2605\ \2605\ ';
+    color:white;
+    text-align: right;
+}
+
+.skills-primary [data-skill="3"] span::after {
+    display: inline-block;
+    content: '\2005\ \2005\ \2005\ \2005\ \2005\ \2005\ \2005\ \2605\ \2605\ ';
+    color:white;
+    text-align: right;
+}
+
+.skills-primary [data-skill="1"] span::after {
+    display: inline-block;
+    content: '\2005\ \2005\ \2005\ \2605\ ';
+    color:white;
+    text-align: right;
+}
+
+
+.skills-secondary [data-skill="9"] span::after {
+    display: inline-block;
+    content: '\2005\ \2005\ \2005\ \2005\ \2005\ \2605\ \2605\ \2605\ \2605\ \2605\ ';
+    color:white;
+    text-align: right;
+
+}
+
+.skills-secondary [data-skill="5"] span::after {
+    display: inline-block;
+    content: '\2005\ \2005\ \2005\  \2005\ \2005\  \2005\ \2005\  \2005\  \2005\  \2005\ \2005\ \2605\ \2605\ \2605\ ';
+    color:white;
+
+}
+
+.skills-secondary [data-skill="7"] span::after {
+    display: inline-block;
+    content: '\2005\ \2005\ \2005\ \2605\ \2605\ \2605\ \2605\ ';
+    color:white;
+    text-align: right;
+
+}
+
+
+#experiences {
+    display: grid;
+    grid-template-columns: 140px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 20%;
+
+    
+}
+
+#experiences h3 {
+
+    grid-row: 1/3;
+    border-right: 1px solid black;
+}
+
+.experience {
+    grid-column: 2;
+    text-align:left;
+    display: grid;
+}
+
+.experience-description {
+    grid-column: 1;
+    grid-row: 3;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    
+}
+
+.experience-type {
+    color: 	#1c8e8e;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 1;
+
+}
+
+
+
+.experience-details {
+    opacity: 0.5;
+    text-align: right;
+    grid-row: 2;
+    grid-column: 1;
+
+    padding-bottom: 10px;
+    
+}
+
+.experience-institution {
+    display: none;
+}
+
+
+
+#education {
+    display: grid;
+    grid-template-columns: 140px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 20%;
+    margin-bottom: 1%;
+}
+
+#education h3 {
+    grid-row: 1/3;
+    border-right: 1px solid black;
+}
+
+
+
+
+#hobbies {
+    display: grid;
+    grid-template-columns: 2    2fr 1fr;
+    width: 400px;
+    height: 6%;
+    margin-bottom: 5%;
+}
+
+#hobbies > h3 {
+    grid-row: 1/3;
+    grid-column: 1;
+    width: 80%;
+    border-right: 1px solid black;
+
+
+}
+
+#hobbies > ul {
+    grid-column: 2;
+    text-align: left;
+
+
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact h3 {
+
+    display: none;
+}
+
+.contacts dt {
+
+    display:none;
+}
+
+.contact-skype {
+    display:none;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contact-email a {
+    content:url(../images/email.png);
+    display: inline-block;
+    height: 110px;
+    width: 110px;
+    background-color: saddlebrown
+}
+.contact-phone a {
+    content:url(../images/phone.png);
+    display: inline-block;
+    height: 110px;
+    width: 110px;
+    background-color: saddlebrown
+}
+
+.contact-github a {
+    content:url(../images/github.png);
+    display: inline-block;
+    height: 110px;
+    width: 110px;
+    background-color: saddlebrown
+}
+
+
+.contact-facebook a {
+    content:url(../images/facebook.png);
+    display: inline-block;
+    height: 110px;
+    width: 110px;
+    background-color: saddlebrown;
+}
+
+
+
+@media (max-width:678px) {
+    header figure {
+        display: none;
+    }
+
+    #competencies{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 2fr;
+        height: 100px;
+        margin-bottom: 20%;
+ 
+        
+
+    }
+
+    #competencies h3 {
+        grid-template-rows: 1;
+        grid-template-columns:1;
+        text-align: left;
+        border-bottom: 1.5px solid black;
+        width: 140px;
+        height: 25px;
+        border-right: none;
+
+    }
+
+
+    #experiences{
+
+        grid-template-columns: 1fr;
+        grid-template-rows:  1fr 1fr;
+        margin-bottom: 16%;
+    }
+
+    #experiences h3 {
+        grid-column: 2;
+        border-right: none;
+        border-bottom: 1.5px solid black;
+        width: 120px;
+        height: 24px;
+        margin-bottom: 30px;
+    }
+
+
+    #education {
+
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr;
+        margin-bottom: 30px;
+    }
+
+    #education h3 {
+        grid-column: 2;
+        border-right: none;
+        border-bottom: 1.5px solid black;
+        width: 120px;
+        height: 24px;
+        margin-bottom: 30px;
+    }
+
+
+    #hobbies {
+
+        grid-template-columns: 1fr;
+        margin-bottom: 15%;
+    }
+
+    #hobbies h3 {
+        grid-column: 1;
+        border-right: none;
+        border-bottom: 1.5px solid black;
+        width: 120px;
+        height: 24px;
+    }
+
+    #hobbies ul {
+        grid-column: 1;
+    }
+
+    
+
+
+
+}
