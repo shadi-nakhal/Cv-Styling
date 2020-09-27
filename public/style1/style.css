@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h3:before {
+
+    content: '\25CF\ ';
+    color: red;
+    font-size: 25px;
+
+
+}
+
+h3 {
+    padding: 10px;
+}
+
+
+
+
+body .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    margin: 12%;
+
+
+}
+
+
+header div {
+     width: 100%;
+    height: 180px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: red;
+    display: flex;
+    
+
+}
+
+header figure {
+    width: 110px;
+    height: 110px;
+    background-color: black;
+
+}
+
+header hgroup {
+
+    margin-left: 15%;
+
+}
+
+
+section > h3 {
+    border-bottom: 2px solid gray;
+    margin-bottom:3% ;
+}
+
+
+h4 {
+    color:red;
+}
+
+.experience-type::after {
+    content: " @";
+}
+
+.experience-institution {
+    opacity: 0.7;
+    font-weight: normal;
+}
+
+.experience-details {
+   color:#999999 ;
+}
+
+.experience-date-separator {
+    color: red;
+}
+
+.experience-location::before {
+    content: "in "
+}
+
+.experience > p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contacts {
+
+    position: absolute;
+    top: 5%;
+    right:0;
+    width: 50%;
+    font-size: 1.2em;
+}
+
+.contact {
+
+    display: flex;
+}
+
+.contact > dt {
+    width: 40%;
+    background-color: red;
+    color: white;
+
+}
+
+.contact > dd {
+    width: 100%;
+    background-color: black;
+
+}
+
+dd > a {
+    text-decoration: none;
+    color: red;
+}
+
+
+
+#contact h3 {
+    display: none;
+}
+
+
+
+
+
+.skill {
+    background-color: #cccccc;
+    margin: 1%;
+}
+.skills span {
+    margin: 0.9%;
+    height: 10.8%;
+    color: #fff5f5;
+    padding-left: 0.5%;
+    background-color: #ff0000;
+
+}
+
+[data-skill="1"] span{
+    display: inline-block;
+    width: 10%;
+
+}
+[data-skill="3"] span{
+    
+    display: inline-block;
+    width: 30%;
+
+}
+
+[data-skill="5"] span{
+    
+    display: inline-block;
+    width: 50%;
+}
+[data-skill="7"] span{  
+    display: inline-block;
+    width: 70%;
+}
+
+[data-skill="9"] span{
+    
+    display: inline-block;
+    width: 50%;
+}
+
+.skills-secondary div {
+    opacity: 0.7;
+}
+
+.skills-secondary::before {
+    content: "Other";
+    font-weight: bold;
+}
+.skills-primary::before{
+    content: "Main";
+    font-weight: bold;
+}
+
+
+#hobbies li {
+    margin-left: 6%;
+}
+
+
+@media (max-width:1203px) {
+        body .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: baseline;
+        margin: 5%;
+        }
+
+        *{
+            width: auto;
+        }
+
+
+        header div {
+            display:flex;
+            flex-direction: column;
+            font-size: small;
+            height: 200%;
+            align-items: flex-start;
+        }
+
+        header hgroup{
+            margin-left: 5%;
+        }
+
+        .contacts {
+            position: static;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            font-size: 1.2em;
+
+        }
+
+
+        .contact > dt {
+            width: 70%;
+        }
+
+        .contact > dd {
+            width: 100%;
+            background-color: white;
+        }
+
+        .contact-skype > dd {
+            color: black;
+        }
+
+        #contact h3 {
+
+            display: block;
+
+        }
+
+}
